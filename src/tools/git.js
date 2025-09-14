@@ -5,7 +5,7 @@ import { run } from "../helpers/process.js";
 export function registerGitTools(server) {
   // --- git.list_changed_files ---
   server.registerTool(
-    "git.list_changed_files",
+    "git_list_changed_files",
     {
       title: "List changed files",
       description:
@@ -47,7 +47,7 @@ export function registerGitTools(server) {
 
   // --- git.diff_unstaged ---
   server.registerTool(
-    "git.diff_unstaged",
+    "git_diff_unstaged",
     {
       title: "Unified diff of unstaged changes",
       description:
@@ -84,7 +84,7 @@ export function registerGitTools(server) {
   );
     // --- git.log ---------------------------------------------------------------
   server.registerTool(
-    "git.log",
+    "git_log",
     {
       title: "List recent commits",
       description:
@@ -136,7 +136,7 @@ export function registerGitTools(server) {
 
   // --- git.commit ------------------------------------------------------------
   server.registerTool(
-    "git.commit",
+    "git_commit",
     {
       title: "Create a git commit",
       description:
