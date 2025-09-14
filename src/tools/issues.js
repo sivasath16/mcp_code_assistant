@@ -9,7 +9,7 @@ async function hasGh() {
 export function registerIssuesTools(server) {
   // --- issues.list -----------------------------------------------------------
   server.registerTool(
-    "issues.list",
+    "issues_list",
     {
       title: "List GitHub issues (requires gh CLI)",
       description:
@@ -58,7 +58,7 @@ export function registerIssuesTools(server) {
 
   // --- prs.list --------------------------------------------------------------
   server.registerTool(
-    "prs.list",
+    "prs_list",
     {
       title: "List GitHub pull requests (requires gh CLI)",
       description:

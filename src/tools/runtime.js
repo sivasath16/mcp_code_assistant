@@ -4,7 +4,7 @@ import { run } from "../helpers/process.js";
 export function registerRuntimeTools(server) {
   // --- runtime.processes -----------------------------------------------------
   server.registerTool(
-    "runtime.processes",
+    "runtime_processes",
     {
       title: "List running processes",
       description: "Lists running processes using `ps` (Unix) or `tasklist` (Windows).",
@@ -35,7 +35,7 @@ export function registerRuntimeTools(server) {
 
   // --- runtime.logs ----------------------------------------------------------
   server.registerTool(
-    "runtime.logs",
+    "runtime_logs",
     {
       title: "Tail a log file",
       description: "Reads the last N lines from a log file.",
@@ -66,7 +66,7 @@ export function registerRuntimeTools(server) {
 
   // --- runtime.port_check ----------------------------------------------------
   server.registerTool(
-    "runtime.port_check",
+    "runtime_port_check",
     {
       title: "Check if a port is listening",
       description: "Checks if a TCP port is open on localhost.",

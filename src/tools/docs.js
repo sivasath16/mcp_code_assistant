@@ -7,7 +7,7 @@ import { run } from "../helpers/process.js";
 export function registerDocsTools(server) {
   // --- docs.read -------------------------------------------------------------
   server.registerTool(
-    "docs.read",
+    "docs_read",
     {
       title: "Read a documentation file",
       description: "Reads README/ADR/markdown/plaintext docs safely.",
@@ -26,7 +26,7 @@ export function registerDocsTools(server) {
 
   // --- docs.search -----------------------------------------------------------
   server.registerTool(
-    "docs.search",
+    "docs_search",
     {
       title: "Search docs/README/ADRs",
       description:
@@ -87,7 +87,7 @@ export function registerDocsTools(server) {
 
   // --- docs.list_common ------------------------------------------------------
   server.registerTool(
-    "docs.list_common",
+    "docs_list_common",
     {
       title: "List common documentation files",
       description:
